@@ -1,0 +1,79 @@
+name: Generate snake animation
+
+
+
+on:
+
+  schedule:
+
+    # Runs every 12 hours
+
+    - cron: "0 */12 * * *"
+
+  # Allows manual running from the Actions tab
+
+  workflow_dispatch:
+
+
+
+# The mandatory 'jobs' section starts here
+
+jobs:
+
+  generate:
+
+    # The job runs on an Ubuntu runner
+
+    runs-on: ubuntu-latest
+
+    permissions:
+
+      # Required permission to commit the generated file back to the repo
+
+      contents: write 
+
+
+
+    steps:
+
+      - name: Checkout repository
+
+        # Use actions/checkout to get the repository files
+
+        uses: actions/checkout@v4
+
+        with: 
+
+          token: ${{ secrets.GITHUB_TOKEN }} 
+
+
+
+      - name: Generate github-contribution-grid-snake.svg
+
+        # The main snake action
+
+        uses: Platane/snk@v3
+
+        with:
+
+          github_user_name: ${{ github.repository_owner }}
+
+          # The corrected syntax for V3: passing output and palette via 'outputs'
+
+          outputs: |
+
+            dist/snake.svg?palette=github-dark
+
+
+
+      - name: Commit files
+
+        # Commits the new/updated SVG file back to the 'main' branch
+
+        uses: stefanzweifel/git-auto-commit-action@v5
+
+        with:
+
+          commit_message: Update snake animation 🐍
+
+          files: dist/snake.svg
