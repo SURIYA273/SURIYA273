@@ -65,25 +65,29 @@ Goal: "To become a top-tier Full Stack Developer & Educator"
 <br clear="both">
 
 
-  # 📊 GitHub Analytics & Contributions :
-
+# 📊 GitHub Analytics & Contributions :
 
 <table align="center" width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="https://nirzak-streak-stats.vercel.app/?user=SURIYA273&theme=dark&hide_border=false" alt="GitHub Streak" />
+      <!-- Fast, reliable streak stats mirror -->
+     <img src="https://streak-stats.demolab.com?user=SURIYA273&theme=dark&short_numbers=true" alt="GitHub Streak" />
     </td>
-
-  <td width="50%" align="center">
-      <img src="https://github-contributor-stats.vercel.app/api?username=SURIYA273&limit=5&theme=dark&combine_all_yearly_contributions=true" alt="Top Contributed Repos" />
+    <td width="50%" align="center">
+      <!-- High-availability stats card mirror -->
+      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=suriya273&show_icons=true&theme=dark" alt="GitHub Stats" />
     </td>
   </tr>
 </table>
+
 <br clear="both">
 
-
 # 🏆 GitHub Trophies :
-![](https://github-profile-trophy.vercel.app/?username=SURIYA273&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+
+<p align="center">
+  <!-- Alternative stable trophy server -->
+  <img src="https://github-profile-trophies.vercel.app/?username=suriya273&theme=radical" alt="GitHub Trophies" />
+</p>
 
 <br clear="both">
 
