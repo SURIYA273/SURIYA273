@@ -52,7 +52,7 @@ jobs:
 
         # The main snake action
 
-        uses: Platane/snk@v3
+        uses: Platane/snk/svg-only@v3
 
         with:
 
